@@ -88,3 +88,6 @@
 # print(f'Расстояние между точками {boring}')
 
 
+a = 50
+b = 100
+print(a + a + float(b))
