@@ -17,14 +17,25 @@
 # [2, 3, 5, 6] => [12, 15]
 # Решение
  
+# Не смог избавиться от зеркальных значений
+# my_list1 = [2, 3, 4, 5, 6]
+# my_list2 = []
 
-my_list1 = [2, 3, 4, 5, 6]
-my_list2 = []
-
-for i in range(len(my_list1)): 
-       com = my_list1[i] * my_list1[len(my_list1)-i-1 ]  
-       my_list2.append(com)
-print(my_list2)
+# for i in range(len(my_list1)): 
+#        com = my_list1[i] * my_list1[len(my_list1)-i-1 ]  
+#        my_list2.append(com)
+# print(my_list2)
       
     
-       
+# №3 Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов, отличной от 0.
+# Пример:
+# [1.1, 1.2, 3.1, 5, 10.01] => 0.19      
+
+my_lyst = [1.1, 1.2, 3.1, 5, 10.01]
+my_lyst2 = []
+for i in my_lyst:
+ if i % 1 != 0:
+    my_lyst1 = round(i % 1, 2) 
+    my_lyst2.append(my_lyst1)
+summ = max(my_lyst2) - min(my_lyst2)
+print(summ)
